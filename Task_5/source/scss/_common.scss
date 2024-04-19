@@ -1,0 +1,47 @@
+@import "mixins.scss";
+
+.section {
+  &__text {
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: #004d00;
+    padding: 10px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      & {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #004d26;
+    padding: 10px;
+  }
+
+  &__logo {
+    @include logo(2rem, 700, 1.2, 0.2rem, #00cc00);
+
+    padding: 10px 0;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-link::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      background-image: url(../img/flex.png);
+      background-size: contain;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}

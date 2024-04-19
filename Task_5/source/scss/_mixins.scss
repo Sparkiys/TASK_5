@@ -1,0 +1,7 @@
+@mixin logo($fz: 2rem, $fw: 700, $lh: 1.2, $ls: 0.2, $color: #00cc00) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $color;
+}
